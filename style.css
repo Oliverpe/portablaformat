@@ -1,0 +1,60 @@
+/*body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin : 20px;
+    padding: 0px;
+}*/
+
+/*#sokForm {
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    
+}
+    #sokfaltform {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+#sokfalt {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#sokKnapp {
+padding: 8px 16px;
+margin-left: 10px;
+background-color: #007bff;
+border:none;
+color: #fff;
+font-size: 16px;
+border-radius: 4px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+#sokKnapp:hover{
+    background-color: #0056b3;
+}S
+    */
+
+body{
+    background-color: lightblue;
+}
+
+
+
+#sokfaltform input::placeholder{
+    opacity: 0.7;
+    
+}
+
+
+
+#weather_card{
+background: linear-gradient(145deg, #fff,  #f8f9fa);
+border-radius: 15px;
+}
