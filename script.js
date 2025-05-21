@@ -66,7 +66,6 @@ function searchWeather(query) {
         let weather_temp = document.createElement('h2');
         weather_temp.classList.add('weather_temp');
         weather_temp.textContent = `${data.main.temp}°C `;
-        //weather_cardbody.appendChild(weather_temp);
 
         //Tempratur det känns om till väderkort 
         let weather_tempfl = document.createElement('p');
@@ -78,11 +77,7 @@ function searchWeather(query) {
         let weather_desc = document.createElement('p');
         weather_desc.classList.add('weather_desc');
         weather_desc.textContent = `${data.weather[0].description}`;
-        //weather_cardbody.appendChild(weather_desc);
         
-        
-
-        //container.appendChild(weather_card);
         //lägger till element i kolumnen och raden
         row1.appendChild(col);
         col.append(weather_temp, weather_desc,);
@@ -93,48 +88,8 @@ function searchWeather(query) {
 
 //Lyssnare när användare hamnar på sidan
 window.addEventListener("load", function() {
-       
-    /**
-     * //hämtar contianer elementet
-     *  let container = document.getElementById('container');
-        if(!container) {
-            console.error("hittar inte container element");
-            return;
-        }
-        
-        console.log("container hittad");
-        
-        //skapar formulär
-        let container_form = document.createElement('form');
-        container_form.id="sokfaltform";
-    
-        //skapar sökfältet
-        let sokfalt = document.createElement('input');
-        sokfalt.id="sokfalt";
-        sokfalt.setAttribute("placeholder", "vad blir det för väder?");
-        sokfalt.addEventListener("input", function() {
-        console.log("användaren skriver i sökfältet");
-        });
-    
-        //skapar kmapp
-        let sokKnapp = document.createElement("button");
-        sokKnapp.id = "sokKnapp";
-        sokKnapp.textContent = "Sök";
-
-   
-    
-        //lägger till sökfältet och knappen till formuläret
-        container_form.appendChild(sokfalt);
-        container_form.appendChild(sokKnapp);
-
-        //Lägger till formuläret i container-elementet.
-        container.appendChild(container_form);
-
-     */
-    
-       
-
-        //Lyssnare som lyssnar på efter formulärets submit händelse 
+ 
+       //Lyssnare som lyssnar på efter formulärets submit händelse 
         document.querySelector('#sokfaltform').addEventListener('submit', function(event) {
             event.preventDefault();//förhindrar att sidan laddas om
 
@@ -157,15 +112,3 @@ window.addEventListener("load", function() {
     
     
     });
-
-//sokForm.appendChild(sokfalt);
-
-/*const sokKnapp = this.document.createElement('button');
-sokKnapp.setAttribute('textcontent', "Sök");
-console.log(sokKnapp);
-
-sokForm.append(sokfalt, sokKnapp);
-});*/
-
-sokForm.append(sokfalt, sokKnapp);
-});*/
